@@ -1,0 +1,16 @@
+{
+  "name": "teste-jacons-morais",
+  "version": "1.0.0",
+  "description": "Teste processo seletivo e-Deploy",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jacons Morais",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "node": "^9.11.0",
+    "request": "^2.85.0"
+  }
+}
