@@ -15,12 +15,10 @@ app.get('/', function (req, res) {
 		res.send("Erro ao acessar a aplicação servidora " + error);
 	else {
 		var nodes = JSON.parse(body);
-		var p = NodesController(nodes, false);
-		var p2 = NodesController(nodes, true);
-		res.send("O caminho mais curto considerando o algoritmo guloso é: " + p.path + " com uma distancia de "+ p.distance +"<br>O caminho mais curto considerando custo médio por aresta é: " + p2.path + " com uma distancia de " + p2.distance);
+		var p = NodesController(nodes, true);
+		res.send("O caminho mais curto considerando o algoritmo guloso é: " + p.path + " com uma distancia de "+ p.distance);
 	}
-});
- 	//res.send("ok");
+	});
 });
 
 app.listen(process.env.PORT || 5000, function () {
